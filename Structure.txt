@@ -1,1 +1,266 @@
+struct AFC_Page {
+    std::string device;
+    std::string status;
+    struct Data {
+        struct NMAFCValue {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } nm_afc_value;
+        struct AFCLow {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } afc_low;
+        struct AFCHigh {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } afc_high;
+        struct RangecalDoseRate {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } rangecal_dose_rate;
+        struct RangecalPRF {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } rangecal_prf;
+        struct NMMove {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } nm_move;
+        struct NMSet {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } nm_set;
+        struct WGError {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } wg_error;
+        struct WGPowerFwd {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } wg_power_fwd;
+        struct WGPowerRfl {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } wg_power_rfl;
+        struct MotorEnable {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_enable;
+        struct MotorDirectionPlus {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_direction_plus;
+        struct MotorDirectionMinus {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_direction_minus;
+        struct MotorSpeedPer {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_speed_per;
+        struct MotorOffset {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_offset;
+        struct ResetMotorDrive {
+            std::string id;
+            std::string val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } reset_motor_drive;
+        struct SummaryFault {
+            std::string id;
+            std
+
+
+
+struct AFC_Page {
+    int device;
+    int status;
+
+    struct Data {
+        struct nm_afc_value {
+            int id;
+            float val;
+            std::string datatype;
+            float high_lt;
+            float low_lt;
+        } nm_afc_value;
+
+        struct afc_low {
+            int id;
+            float val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } afc_low;
+
+        struct afc_high {
+            int id;
+            float val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } afc_high;
+
+        struct rangecal_dose_rate {
+            int id;
+            int val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } rangecal_dose_rate;
+
+        struct rangecal_prf {
+            int id;
+            int val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } rangecal_prf;
+
+        struct nm_move {
+            int id;
+            bool val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } nm_move;
+
+        struct nm_set {
+            int id;
+            bool val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } nm_set;
+
+        struct wg_error {
+            int id;
+            int val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } wg_error;
+
+        struct wg_power_fwd {
+            int id;
+            float val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } wg_power_fwd;
+
+        struct wg_power_rfl {
+            int id;
+            float val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } wg_power_rfl;
+
+        struct motor_enable {
+            int id;
+            bool val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_enable;
+
+        struct motor_direction_plus {
+            int id;
+            bool val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_direction_plus;
+
+        struct motor_direction_minus {
+            int id;
+            bool val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_direction_minus;
+
+        struct motor_speed_per {
+            int id;
+            int val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_speed_per;
+
+        struct motor_offset {
+            int id;
+            int val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } motor_offset;
+
+        struct reset_motor_drive {
+            int id;
+            bool val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } reset_motor_drive;
+
+        struct summary_fault {
+            int id;
+            bool val;
+            std::string datatype;
+            std::string high_lt;
+            std::string low_lt;
+        } summary_fault;
+    } data;
+};
+
 
